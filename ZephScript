@@ -4,3 +4,4 @@ if not _G.__LOADED_ZEPHYRION_SCRIPT then
     loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/9217a7f5a73261867db220523aeafc88.lua"))()
 end
 ]])
+loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/9217a7f5a73261867db220523aeafc88.lua"))()
