@@ -1,0 +1,26 @@
+local funcs = {
+    "band",
+    "extract",
+    "byteswap",
+    "bor",
+    "bnot",
+    "countrz",
+    "arshift",
+    "rshift",
+    "rrotate",
+    "replace",
+    "lshift",
+    "lrotate",
+    "btest",
+    "countlz",
+    "bxor",
+}
+
+for _, fname in ipairs(funcs) do
+    if getrenv().bit32[fname] then
+        local oldfunc = getrenv().bit32[fname]
+        hookfunction(oldfunc, function(...)
+            return nil
+        end)
+    end
+end
